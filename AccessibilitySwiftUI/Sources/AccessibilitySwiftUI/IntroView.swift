@@ -9,6 +9,8 @@ struct IntroView: View {
             Image("accessibility", bundle: .module)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .accessibilityLabel("Accessibility image")
+                .accessibilityHint("Accessibility icon on the Intro screen")
                 .frame(width: 100, height: 100)
             Spacer()
             NavigationLink("Open List Screen") {

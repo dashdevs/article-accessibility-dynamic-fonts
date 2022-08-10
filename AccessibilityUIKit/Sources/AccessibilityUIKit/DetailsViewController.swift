@@ -19,9 +19,17 @@ extension DetailsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsViewControllerCell", for: indexPath)
         if let cell = cell as? DetailsViewControllerCell {
-            cell.titleLabel.text = "Title \(indexPath.row)"
-            cell.subtitleLabel.text = "Subtitle \(indexPath.row)"
-            cell.switcher.isOn = indexPath.row % 2 == 0
+            let title = "Title \(indexPath.row)"
+            let subtitle = "Subtitle \(indexPath.row)"
+            let isOn = indexPath.row % 2 == 0
+            cell.titleLabel.text = title
+            cell.subtitleLabel.text = subtitle
+            cell.switcher.isOn = isOn
+            cell.titleLabel.isAccessibilityElement = false
+            cell.subtitleLabel.isAccessibilityElement = false
+            cell.switcher.isAccessibilityElement = false
+            cell.isAccessibilityElement = true
+            cell.accessibilityLabel = title + " " + subtitle + " " + (isOn ? "On" : "Off")
         }
         return cell
     }

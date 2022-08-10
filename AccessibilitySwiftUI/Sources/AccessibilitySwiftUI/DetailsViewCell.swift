@@ -14,5 +14,8 @@ struct DetailsViewCell: View {
             Spacer()
             Toggle("", isOn: $isOn)
         }
+        .accessibilityElement()
+        .accessibilityAddTraits(.isButton)
+        .accessibilityLabel(title + " " + subtitle + " " + (isOn ? "On" : "Off"))
     }
 }
