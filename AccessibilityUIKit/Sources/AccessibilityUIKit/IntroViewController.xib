@@ -49,11 +49,13 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vr6-mi-SJA" secondAttribute="trailing" constant="8" id="Cc7-dM-q5z"/>
                 <constraint firstItem="Vr6-mi-SJA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="LF5-he-Eg0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DYr-RO-Qbg" secondAttribute="trailing" constant="8" id="Lub-TD-ieW"/>
                 <constraint firstItem="Vr6-mi-SJA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="UED-eJ-M0M"/>
                 <constraint firstItem="XBx-Np-sCl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VsV-sQ-Pr1"/>
                 <constraint firstItem="XBx-Np-sCl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aTG-IR-nVE"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DYr-RO-Qbg" secondAttribute="bottom" constant="16" id="fRS-eN-Yze"/>
                 <constraint firstItem="DYr-RO-Qbg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ubl-Bf-tFu"/>
+                <constraint firstItem="DYr-RO-Qbg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="yqJ-Ba-8Jx"/>
             </constraints>
             <point key="canvasLocation" x="139" y="139"/>
         </view>

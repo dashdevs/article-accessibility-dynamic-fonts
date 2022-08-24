@@ -15,6 +15,7 @@
 		75AEF9E228A3FC270083B744 /* AccessibilitySnapshot in Frameworks */ = {isa = PBXBuildFile; productRef = 75AEF9E128A3FC270083B744 /* AccessibilitySnapshot */; };
 		75AEF9E428A3FC270083B744 /* AccessibilitySnapshotCore in Frameworks */ = {isa = PBXBuildFile; productRef = 75AEF9E328A3FC270083B744 /* AccessibilitySnapshotCore */; };
 		75AEF9E728A3FEB60083B744 /* SwiftUISnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEF9E628A3FEB60083B744 /* SwiftUISnapshotTests.swift */; };
+		75B7EECF28B6108500E3261B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75B7EEC228B6108500E3261B /* Roboto-Regular.ttf */; };
 		75E0DB75289407A800C782D2 /* AccessibilityUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 75E0DB74289407A800C782D2 /* AccessibilityUIKit */; };
 		75E0DB7728940DF800C782D2 /* IntroViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0DB7628940DF800C782D2 /* IntroViewControllerRepresentable.swift */; };
 		75E0DB7B28941AB600C782D2 /* AccessibilitySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 75E0DB7A28941AB600C782D2 /* AccessibilitySwiftUI */; };
@@ -40,6 +41,9 @@
 		758E699F28A3FB8B0033D881 /* UIKitSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitSnapshotTests.swift; sourceTree = "<group>"; };
 		75AEF9E528A3FCC60083B744 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
 		75AEF9E628A3FEB60083B744 /* SwiftUISnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISnapshotTests.swift; sourceTree = "<group>"; };
+		75B7EEC228B6108500E3261B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		75B7EEC828B6108500E3261B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		75B7EEDA28B610F400E3261B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		75E0DB712894066300C782D2 /* AccessibilityUIKit */ = {isa = PBXFileReference; lastKnownFileType = text; path = AccessibilityUIKit; sourceTree = SOURCE_ROOT; };
 		75E0DB7628940DF800C782D2 /* IntroViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		75E0DB7928941A4300C782D2 /* AccessibilitySwiftUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AccessibilitySwiftUI; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		750E09DB28913E7900DED252 /* AccessibilityArticle */ = {
 			isa = PBXGroup;
 			children = (
+				75B7EEDA28B610F400E3261B /* Info.plist */,
+				75B7EEBE28B6107400E3261B /* Fonts */,
 				750E09DC28913E7900DED252 /* AccessibilityArticleApp.swift */,
 				750E09DE28913E7900DED252 /* ContentView.swift */,
 				75E0DB7628940DF800C782D2 /* IntroViewControllerRepresentable.swift */,
@@ -116,6 +122,23 @@
 				758E699F28A3FB8B0033D881 /* UIKitSnapshotTests.swift */,
 			);
 			path = AccessibilityArticleSnapshotTests;
+			sourceTree = "<group>";
+		};
+		75B7EEBE28B6107400E3261B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				75B7EEBF28B6108500E3261B /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		75B7EEBF28B6108500E3261B /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				75B7EEC828B6108500E3261B /* LICENSE.txt */,
+				75B7EEC228B6108500E3261B /* Roboto-Regular.ttf */,
+			);
+			path = Roboto;
 			sourceTree = "<group>";
 		};
 		75E0DB73289407A800C782D2 /* Frameworks */ = {
@@ -219,6 +242,7 @@
 			files = (
 				750E09E428913E7B00DED252 /* Preview Assets.xcassets in Resources */,
 				750E09E128913E7B00DED252 /* Assets.xcassets in Resources */,
+				75B7EECF28B6108500E3261B /* Roboto-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +410,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AccessibilityArticle/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AccessibilityArticle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -414,6 +439,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AccessibilityArticle/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AccessibilityArticle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
