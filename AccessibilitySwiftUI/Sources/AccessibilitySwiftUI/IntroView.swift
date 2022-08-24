@@ -4,6 +4,7 @@ struct IntroView: View {
     var body: some View {
         VStack {
             Text("Title")
+                .font(.custom("Roboto-Regular", size: 28, relativeTo: .title))
                 .padding(.top)
             Spacer()
             Image("accessibility", bundle: .module)
@@ -16,6 +17,7 @@ struct IntroView: View {
             NavigationLink("Open List Screen") {
                 DetailsView()
             }
+            .font(.custom("Roboto-Regular", size: 17))
             .padding(.bottom)
         }
     }
